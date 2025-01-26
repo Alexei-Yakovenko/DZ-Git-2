@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Форми. Перша частина ДЗ</title>
+    <link rel="stylesheet" href="./DZ-L9-HTML+CSS-14.01.25.CSS">
+</head>
+<!-- -->
+
+<body>
+    <button>
+        <a href="./DZ-L9-HTML+CSS-14.01.25-2.html" class="button">Перейти на другу частину ДЗ</a>
+       </button>
+        
+    </button>
+    <!-- Створити html сторінку із формою. Повинна містити поля:
+- Імя, пароль, повторити пароль, дата народження, стать, вік, опис, сабміт кнопка.-->
+
+    <form id="forma1">
+        <div>
+            <label for="fname">Ім'я:</label>
+            <input type="text" placeholder="Вкажіть ваше ім'я" name="fname" id="fname">
+        </div>
+        <div>
+            <label for="pass1">Пароль:</label>
+            <input type="password" placeholder="Вкажіть ваш пароль" name="pass1" id="pass1">
+        </div>
+        <div>
+            <label for="pass2">Повторіть пароль:</label>
+            <input type="password" placeholder="Повторіть ваш пароль" name="pass2" id="pass2">
+        </div>
+        <div>
+            <label for="birth">Дата народження:</label>
+            <input type="date" name="birth" id="birth">
+        </div>
+        <div>
+            <label for="return">Ваш вік:</label>
+            <select name="return" id="return">
+                <option value="18-25">18-25</option>
+                <option value="18-25">25-30</option>
+                <option value="18-25">30-35</option>
+                <option value="18-25">35-40</option>
+                <option value="18-25">40+</option>
+            </select>
+        </div>
+        <div>
+            <div>Вкажіть вашу стать:</div>
+            <input type="radio" name="sex" id="male"> <label for="male">Чоловік</label>
+            <input type="radio" name="sex" id="female"> <label for="female">Жінка</label>
+        </div>
+        <div>
+            <label for="opis">Опис:</label>
+            <input type="text" placeholder="Опишіть вашу проблему (можна коротко)" name="opis" id="opis">
+        </div>
+        <input type="submit" value="Відправити" id="sendform">
+    </form>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
