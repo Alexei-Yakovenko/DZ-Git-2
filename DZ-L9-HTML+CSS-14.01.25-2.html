@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форми. Друга частина ДЗ</title>
+    <link rel="stylesheet" href="./DZ-L9-HTML+CSS-14.01.25.CSS">
+</head>
+<!-- -->
+
+<body>
+    <!--
+    Файлик з формою повинен містити посилання на іншу HTML сторінку в якій буде форма-фільтер з наступними полями:
+- тип продукту: телефон, ноутбук, пилесос, зарядка (селект) - опшин?
+- потужність: 15w, 25w, 65w, 100w, 200w (чекбокс)
+- марка: самсунг, lg, asus, lenovo (чекбокс)
+- сортування: від дешевих, від дорогих, по рейтингу (опшин)
+- назва моделі (текст)
+- сабміт кнопка
+   -->
+   <button>
+    <a href="./DZ-L9-HTML+CSS-14.01.25.html" class="button">Перейти на першу частину ДЗ</a>
+   </button>
+
+    <form id="forma2">
+        <div>
+            <label for="tipprodukt">Тип продукту:</label>
+            <select name="tipprodukt" id="tipprodukt">
+                <option value="telefon">Телефон</option>
+                <option value="noutbuk">Ноутбук</option>
+                <option value="pilosos">Пилосос</option>
+                <option value="zaradka">Зарядка</option>
+            </select>
+        </div>
+        <div>
+            <label for="power">Потужність:</label>
+            <input type="checkbox" id="15w"><label for="15w">15w</label>
+            <input type="checkbox" id="25w"><label for="25w">25w</label>
+            <input type="checkbox" id="65w"><label for="65w">65w</label>
+            <input type="checkbox" id="100w"><label for="100w">100w</label>
+            <input type="checkbox" id="200w"><label for="200w">200w</label>
+        </div>
+        <div>
+            <label for="marka">Марка:</label>
+            <input type="checkbox" id="Samsung"><label for="Samsung">Samsung</label>
+            <input type="checkbox" id="LG"><label for="LG">LG</label>
+            <input type="checkbox" id="ASUS"><label for="ASUS">ASUS</label>
+            <input type="checkbox" id="Lenovo"><label for="Lenovo">100w</label>
+        </div>
+        <div>
+            <label for="sort">Сортування:</label>
+            <select name="sort" id="sort">
+                <option value="viddesh">Від дешевих до дорогих</option>
+                <option value="viddorog">Від дорогих до дешевих</option>
+                <option value="poreitinge">За рейтингом</option>
+            </select>
+            <div>
+                <label for="modelname">Назва моделі:</label>
+                <input type="text" placeholder="Напишіть назву моделі" name="modelname" id="modelname">
+            </div>
+        </div>
+        <input type="submit" value="Відправити" id="sendform">
+
+    </form>
+
+<!-- Фрейм -->
+ <hr>
+ <h2>Використання фрейму</h2>
+ <hr>
+ <iframe src="./DZ-L9-HTML+CSS-14.01.25-3.html"></iframe>
+
+</body>
+
+</html>

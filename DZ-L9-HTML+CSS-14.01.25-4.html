@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Адаптивний дизайн. Четверта частина ДЗ</title>
+    <link rel="stylesheet" href="./DZ-L9-HTML+CSS-14.01.25.CSS">
+</head>
+<!-- -->
+
+<body>
+    <!--Створити окремий html файлик де будуть застосовані всі 6 принципів адаптивного дизайну
+   випишіть ці принципи в окремий блок цього файлика.
+   Сторінка повинна бути адаптована під наступні ендпоінтии (верстайте сторінку довільно):
+   320-550px, 550-768px, 768-991px, 991-1440px, 1440-1920px -->
+    <h1>Головні принципи даптивного дизайну:</h2>
+        <ol>
+            <li>Використанная Flex та Grid.</li>
+            <li>Використання відносних одиниць вимірювання.</li>
+            <li>Використання min-width, max-width, min-height, max-height.</li>
+            <li>Використання Media query.</li>
+            <li>Приховування елементів за допомогою Media query.</li>
+            <li>Mobile first.</li>
+        </ol>
+        <hr>
+        <h2>1-Приклад використання Flex та Grid</h2>
+        <hr>
+        <h3>Flex</h3>
+        <div class="flexkont">
+            <div class="k1"></div>
+            <div class="k2"></div>
+            <div class="k3"></div>
+            <div class="k4"></div>
+        </div>
+        <h3>Grid</h3>
+        <div class="osnova">
+            <div class="Red"></div>
+            <div class="Green"></div>
+            <div class="Blue"></div>
+            <div class="Black"></div>
+        </div>
+
+        <hr>
+        <h2>2 (3)-Приклад використання відносних одиниць вимірювання та -min, -max.</h2>
+        <hr>
+        <form id="forma4">
+            <div>
+                <label for="fname">Ім'я:</label>
+                <input type="text" placeholder="Вкажіть ваше ім'я:" name="fname" id="fname">
+            </div>
+
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="email" placeholder="Вкажіть ваш E-mail:" name="email" id="email">
+            </div>
+
+            <div>
+                <label for="number">Телефон:</label>
+                <input type="tel" placeholder="Ноомер телефону:" name="number" id="number">
+            </div>
+
+            <input type="submit" value="Відправити" id="sendform">
+        </form>
+        <hr>
+        <h2>4-Використання Media query</h2>
+        <hr>
+        <div class="box">
+            <div class="box1">Текст</div>
+        </div>
+        <hr>
+        <h2>5-Приховування елементів за допомогою Media query (на прикладі картинки).</h2>
+        <hr>
+        <h3>Якщо -width меньше 550px, кіт зникне</h3>
+        <div class="img1">
+            <img src="./cat.jpg">
+        </div>
+</html>

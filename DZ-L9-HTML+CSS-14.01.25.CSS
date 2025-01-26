@@ -1,0 +1,231 @@
+/**/
+
+/*Стилі форми forma1*/
+
+label {
+    user-select: none;
+}
+
+#forma1 {
+    display: flex;
+    flex-direction: column;
+    background-color: gold;
+    width: 400px;
+    border: 3px solid rgb(255, 0, 0);
+    margin: 60px auto;
+    padding: 15px;
+}
+
+#forma1 div {
+    margin: 15px 0px;
+}
+
+#sendform {
+    background-color: darkgreen;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#opis {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/*Стилі форми-фільтра forma2*/
+
+#forma2 {
+    display: flex;
+    flex-direction: column;
+    background-color: gold;
+    width: 400px;
+    border: 3px solid rgb(255, 0, 0);
+    margin: 60px auto;
+    padding: 15px;
+}
+
+#forma2 div {
+    margin: 15px 0px;
+}
+
+/*Стилі форми-фільтра forma3*/
+
+#forma3 {
+    display: flex;
+    flex-direction: column;
+    background-color: gold;
+    width: 400px;
+    border: 3px solid rgb(255, 0, 0);
+    margin: 60px auto;
+    padding: 15px;
+}
+
+#forma3 div {
+    margin: 15px 0px;
+}
+
+/*Кнопка переходу між ДЗ*/
+
+.button {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    display: inline-block;
+    text-align: center;
+}
+
+/*Фрейм*/
+
+iframe {
+    display: block;
+    width: 500px;
+    height: 300px;
+    margin: 0 auto;
+    /* Центруємо фрейм так само, як форму */
+}
+
+/*АДАПТИВНІСТЬ*/
+
+/*Флекси та гріди*/
+
+/*Флекси*/
+.flexkont {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 300px;
+}
+
+.k1 {
+    background-color: red;
+    width: 400px;
+    height: 250px;
+}
+
+.k2 {
+    background-color: green;
+    width: 400px;
+    height: 250px;
+}
+
+.k3 {
+    background-color: blue;
+    width: 400px;
+    height: 250px;
+}
+
+.k4 {
+    background-color: black;
+    width: 400px;
+    height: 250px;
+}
+
+/*Гріди*/
+.osnova {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 250px);
+    grid-template-areas:
+        "redcol greencol bluecol blackcol"
+}
+
+.Red {
+    background-color: red;
+    grid-area: redcol;
+}
+
+.Green {
+    background-color: green;
+    grid-area: greencol;
+}
+
+.Blue {
+    background-color: blue;
+    grid-area: bluecol;
+}
+
+.Black {
+    background-color: black;
+    grid-area: blackcol;
+}
+
+/*Відносні одиниці + використання min-width та min-height, приклад на формі*/
+
+/*Стилі форми-фільтра forma4*/
+
+#forma4 {
+
+    background-color: gold;
+    width: calc(100% - 200px);
+    min-width: 200px;
+    height: 300px;
+    min-height: 150px;
+    border: 3px solid rgb(255, 0, 0);
+    margin: 15px auto;
+    padding: 15px;
+}
+
+#forma4 div {
+    margin: 15px 0px;
+}
+
+/*Використання Media query: 290-550px, 550-768px, 768-991px, 991-1440px, 1440-1920px*/
+.box {
+    width: 100%;
+    height: 300px;
+    background-color: burlywood;
+}
+
+.box1 {
+    width: 80%;
+    height: 150px;
+    background-color: chocolate;
+}
+
+@media screen and (max-width: 991px) {
+    .box1 {
+        width: 60%;
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .box1 {
+        width: 40%;
+
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .box1 {
+        width: 20%;
+
+    }
+}
+
+@media (min-width:290px) and (max-width:991px) {
+    .box1 {
+        font-size: 35px;
+    }
+}
+
+/*Приховування елементу при зміні розмірів екрану*/
+
+img {
+    width: 400px;
+    height: 500px;
+}
+
+@media screen and (max-width: 550px) {
+    .img1 {
+        display: none;
+    }
+}
