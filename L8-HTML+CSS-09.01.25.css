@@ -1,0 +1,333 @@
+/*========ЗАСТОСУВАННЯ СЕЛЕКТОРІВ=======*/
+
+/*1-По тегові*/
+span {
+    color: blueviolet;
+}
+
+/*2-По класу*/
+.class {
+    background-color: aqua;
+}
+
+/*3-По айді*/
+#selector {
+    color: aliceblue;
+    background-color: black;
+    font-family: cursive;
+}
+
+/*4-Загальний селектор * */
+* {
+    font-size: 1.5rem;
+}
+
+/*5-Селектор по вкладеності */
+
+.text1 span {
+    color: brown;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*6-Селектор по печелічуванню*/
+.a,
+.b,
+.c {
+    color: chocolate;
+}
+
+/*7-Застосування селектору по тегу+атрибут*/
+img[alt] {
+    width: 800px;
+    height: 400px;
+}
+
+/*8-Застосування селектору по тегу+атрибут з його значенням*/
+img[alt="BMW777"] {
+    width: 400px;
+    height: 200px;
+}
+
+/*9-Застосування селектору по вкладеності*/
+.g>strong {
+    background-color: darkgreen;
+}
+
+/*10-Застосування селектору по сусіднім рівням вкладеності*/
+.g~strong {
+    background-color: darkgreen;
+}
+
+/*11-Застосування селектору hover*/
+.sel1 {
+    color: blueviolet;
+}
+
+.sel1:hover {
+    color: crimson;
+}
+
+/*12-Застосування селектору active*/
+
+.sel2 {
+    color: rgb(255, 231, 96);
+}
+
+.sel2:active {
+    color: chartreuse;
+}
+
+/*13-Застосування селектору before-*/
+.afbef1::before {
+    background-color: darkred;
+    content: "Контент перед:";
+}
+
+/*14-Застосування селектору before-*/
+.afbef2::after {
+    background-color: rgb(44, 235, 117);
+    color: black;
+    content: "контент після.";
+}
+
+/*15-Застосування селектору note-*/
+.text1:not(h3) {
+    background-color: darkcyan;
+    color: red;
+}
+
+/*========СТАРІ СТИЛІ (кубики)=======*/
+
+.kub {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+}
+
+/*========transform-1=======*/
+.kub1 {
+    background-color: blue;
+    left: 300px;
+    top: 200px;
+    transition: 3s;
+}
+
+.kub1:hover {
+    background-color: brown;
+    transform: scale(3);
+}
+
+/*========transform-2=======*/
+.kub2 {
+    background-color: blueviolet;
+    transition: 2s;
+}
+
+.kub2:hover {
+    background-color: rgb(115, 243, 29);
+    transform: scale(.5);
+}
+
+/*========transform-3=======*/
+.kub3 {
+    background-color: brown;
+    transition: 4s;
+}
+
+.kub3:hover {
+    background-color: rgb(243, 29, 147);
+    transform: translate(300px, 200px)
+}
+
+/*========transform-4=======*/
+.kub4 {
+    background-color: black;
+    transition: 2s;
+}
+
+.kub4:hover {
+    background-color: rgb(132, 255, 169);
+    transform: rotate(45deg)
+}
+
+/*========transform-5=======*/
+.kub5 {
+    background-color: chartreuse;
+    transition: 5s;
+}
+
+.kub5:hover {
+    background-color: rgb(253, 135, 24);
+    transform: rotate(45deg) translate(100px, 150px) scale(.7);
+}
+
+/*========filter-1=======*/
+.aaa {
+    filter: grayscale(1);
+    transition: 1s;
+}
+
+.aaa:hover {
+    filter: grayscale(0);
+}
+
+/*========filter-2=======*/
+.bbb {
+    transition: 1s;
+}
+
+.bbb:hover {
+    filter: grayscale(0);
+    filter: brightness(.3)
+}
+
+/*========filter-3=======*/
+.ccc {
+    transition: 1s;
+}
+
+.ccc:hover {
+    filter: blur(10px);
+}
+
+/*========filter-4=======*/
+.ddd {
+    transition: 1s;
+}
+
+.ddd:hover {
+    filter: contrast(.3);
+}
+
+/*========filter-5=======*/
+.eee {
+    transition: 1s;
+}
+
+.eee:hover {
+    filter: drop-shadow(15px 15px 20px);
+    color: blue;
+}
+
+
+/*========Робота з keyframes=======*/
+/*========keyframes-1=======*/
+.kub11 {
+    background-color: blue;
+    animation: cub11 2s infinite;
+}
+
+@keyframes cub11 {
+
+    from {
+        background-color: blue;
+    }
+
+    to {
+        background-color: chocolate;
+    }
+}
+
+
+/*========keyframes-2=======*/
+.kub22 {
+    background-color: blueviolet;
+    animation: cub22 10s infinite;
+}
+
+@keyframes cub22 {
+    0% {
+        background-color: blueviolet;
+    }
+
+    20% {
+        background-color: aqua;
+    }
+
+    40% {
+        background-color: black;
+    }
+
+    60% {
+        background-color: crimson;
+    }
+
+    80% {
+        background-color: darkslateblue;
+    }
+}
+
+/*========keyframes-3=======*/
+.kub33 {
+    background-color: brown;
+    animation: kub33 5s infinite;
+}
+
+@keyframes kub33 {
+    0% {
+        background-color: brown;
+
+    }
+
+    25% {
+        background-color: rgb(51, 58, 58);
+        transform: translate(100px, 100px);
+    }
+
+    50% {
+        background-color: rgb(65, 42, 150);
+        transform: translate(0px, 100px);
+    }
+
+    75% {
+        background-color: rgb(241, 100, 128);
+        transform: translate(0px, 0px);
+    }
+
+
+}
+
+/*========keyframes-4=======*/
+.kub44 {
+    background-color: black;
+    animation: kub44 10s infinite;
+}
+
+@keyframes kub44 {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/*========keyframes-5=======*/
+.kub55 {
+    background-color: chartreuse;
+    animation: kub55 10s infinite;
+}
+
+@keyframes kub55 {
+    0% {
+        background-color: chartreuse;
+
+    }
+
+    25% {
+        background-color: rgb(241, 136, 65);
+        transform: scale(1.5);
+
+    }
+
+    50% {
+        background-color: rgb(65, 42, 150);
+        transform: scale(1);
+    }
+
+    75% {
+        background-color: rgb(241, 100, 128);
+        transform: scale(.5);
+    }
+}
