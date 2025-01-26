@@ -1,0 +1,190 @@
+/*Навігація*/
+.tablica {
+    position: fixed;
+    background-color: aqua;
+    border-radius: 5px;
+}
+
+/*Рухаємо текст*/
+.text {
+    position: absolute;
+    top: 10px;
+    left: 60px;
+    color: crimson;
+}
+
+.content {
+    margin-top: 50px;
+    padding: 10px;
+}
+
+.spisok {
+    border: 3px solid green;
+    margin: 5px;
+    width: 200px;
+    position: relative;
+}
+
+.kub {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+}
+
+/*position absolute*/
+.kub1 {
+    background-color: blue;
+    position: absolute;
+    left: 300px;
+    top: 200px;
+}
+
+/*position fixed*/
+.kub2 {
+    background-color: blueviolet;
+    position: fixed;
+    top: 150px;
+    right: 150px;
+}
+
+/*position relative*/
+.kub3 {
+    background-color: brown;
+    position: relative;
+    top: 100px;
+    right: 40px;
+}
+
+/*position static*/
+.kub4 {
+    background-color: black;
+    position: static;
+}
+
+/*position static*/
+.kub5 {
+    background-color: chartreuse;
+    position: sticky;
+    left: 500px;
+    top: 20px;
+}
+
+/*visibility: hidden*/
+.kub6 {
+    background-color: blue;
+    visibility: hidden;
+}
+
+/*visibility: collapse*/
+.kub7 {
+    background-color: blueviolet;
+    visibility: collapse;
+}
+
+/*display: none*/
+.kub8 {
+    background-color: brown;
+    display: none;
+}
+
+/*display: inline*/
+.kub9 {
+    background-color: black;
+    display: inline;
+}
+
+/*display: inline-block*/
+.kub10 {
+    background-color: chartreuse;
+    display: inline-block;
+
+}
+
+/*display: inline-block*/
+.kub11 {
+    background-color: rgb(255, 0, 98);
+    opacity: 0;
+
+}
+
+/*verflow: hidden*/
+.over1 {
+    width: 150px;
+    height: 500px;
+    margin: 5px;
+    border: 3px solid green;
+    position: absolute;
+    top: 175px;
+    overflow: hidden;
+}
+
+/*overflow: scroll*/
+.over2 {
+    width: 150px;
+    height: 500px;
+    margin: 5px;
+    border: 3px solid green;
+    position: absolute;
+    left: 200px;
+    top: 175px;
+    overflow: scroll;
+}
+
+/*overflow-x, overflow-y*/
+.over3 {
+    width: 150px;
+    height: 500px;
+    margin: 5px;
+    border: 3px solid green;
+    position: absolute;
+    left: 400px;
+    top: 175px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+
+}
+
+/*Стилізація скролу*/
+.over3::-webkit-scrollbar {
+    width: 15px;
+}
+
+.over3::-webkit-scrollbar-thumb {
+    background: rgb(94, 255, 0);
+    border-radius: 10px;
+
+}
+
+/*Флоати*/
+
+.cubfloat {
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+    border: 3px solid red;
+}
+
+.kubfloat1 {
+    background-color: blue;
+    float: right;
+    clear: both;
+}
+
+.kubfloat2 {
+    background-color: chocolate;
+    float: right;
+    clear: both;
+}
+
+.kubfloat3 {
+    background-color: aquamarine;
+    float: left;
+    clear: both;
+}
+
+.kubfloat4 {
+    background-color: blueviolet;
+    float: left;
+
+}
