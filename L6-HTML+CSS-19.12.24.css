@@ -1,0 +1,279 @@
+/* НАВІГАЦІЯ */
+
+
+.tablica {
+
+    background-color: aqua;
+    border-radius: 5px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    padding-top: 60px;
+}
+
+.bord {
+    border: 3px solid red;
+}
+
+/* СТИЛІ ДЛЯ FLEX-КОНТЕЙНЕРА */
+.flexkont {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 400px;
+    background-color: orange;
+}
+
+.k1 {
+    background-color: red;
+    width: 400px;
+    height: 300px;
+}
+
+.k2 {
+    background-color: green;
+    width: 400px;
+    height: 300px;
+}
+
+.k3 {
+    background-color: blue;
+    width: 400px;
+    height: 300px;
+}
+
+.k4 {
+    background-color: black;
+    width: 400px;
+    height: 300px;
+}
+
+/* СТИЛІ ДЛЯ FLOAT-КОНТЕЙНЕРА */
+
+/* Полоски */
+.stripe {
+    background-color: orange;
+    height: 50px;
+    width: 100%;
+    float: left;
+}
+
+/* Блоки */
+.block {
+    width: 25%;
+    height: 250px;
+    float: left;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.black {
+    background-color: black;
+}
+
+/* СТИЛІ ДО ДРУГОЇ КАРТИНКИ */
+
+
+/* РІВЕНЬ 1 */
+
+.rozov {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 400px;
+    background-color: pink;
+    border: 3px color red;
+}
+
+.white {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 800px;
+    background-color: rgb(255, 255, 255);
+}
+
+.black1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    width: 450px;
+    background-color: rgb(0, 0, 0);
+}
+
+/* РІВЕНЬ 2 */
+
+.gray {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 350px;
+    background-color: gray;
+}
+
+.red1 {
+    background-color: red;
+    width: 25%;
+    height: 250px;
+}
+
+.orange2 {
+    background-color: orange;
+    width: 25%;
+    height: 250px;
+}
+
+.biruz3 {
+    background-color: rgb(53, 232, 238);
+    width: 25%;
+    height: 250px;
+}
+
+.yellow4 {
+    background-color: yellow;
+    width: 25%;
+    height: 250px;
+}
+
+/* РІВЕНЬ 3 */
+
+.riven3 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 600px;
+}
+
+
+/* ЛІВИЙ БЛОК */
+.leftblock {
+    background-color: green;
+    width: 33%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.left {
+    display: flex;
+    background-color: orange;
+    height: 450px;
+    width: 350px;
+    align-items: end;
+}
+
+
+.aleft {
+    background-color: purple;
+    width: 50%;
+    height: 400px;
+}
+
+.bleft {
+    background-color: yellow;
+    width: 50%;
+    height: 400px;
+}
+
+
+
+/* ЦЕНТР БЛОК */
+.centrblock {
+    background-color: rgb(53, 232, 238);
+    width: 33%;
+    height: 600px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.centrblock1 {
+
+    background-color: red;
+    width: 33%;
+    height: 400px;
+}
+
+.centrblock2 {
+
+    background-color: yellow;
+    width: 33%;
+    height: 400px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.centrblock2-1 {
+    background-color: orange;
+    width: 50%;
+    height: 350px;
+}
+
+
+.centrblock2-2 {
+    background-color: red;
+    width: 50%;
+    height: 100px;
+}
+
+.centrblock3 {
+
+    background-color: orange;
+    width: 33%;
+    height: 400px;
+}
+
+
+
+/* ПРАВИЙ БЛОК */
+.rightblock {
+    background-color: blue;
+    width: 33%;
+    height: 600px;
+    display: flex;
+    align-items: flex-end;
+
+}
+
+.right1 {
+    background-color: aqua;
+    width: 33%;
+    height: 200px;
+    display: flex;
+    align-items: flex-end;
+
+}
+
+.right2 {
+    background-color: yellow;
+    width: 33%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+}
+
+.right3 {
+    background-color: orange;
+    width: 33%;
+    height: 200px;
+    display: flex;
+    align-items: flex-start;
+}
