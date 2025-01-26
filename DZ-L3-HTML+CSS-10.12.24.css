@@ -1,0 +1,56 @@
+div {
+    color: rgb(6, 243, 6);
+}
+
+
+.primer {
+    color: blueviolet;
+    font-family: cursive;
+    font-size: 25px;
+}
+
+
+#identifikator1 {
+    background-color: cadetblue;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: darkred;
+}
+
+/* Робота з текстом */
+.text1 {
+    color: deeppink;
+}
+
+.text2 {
+    background-color: darkgray;
+}
+
+.text3 {
+    font-size: 20px;
+    line-height: 3;
+}
+
+.text4 {
+    font-weight: 400;
+    letter-spacing: 50;
+}
+
+.text5 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    word-spacing: 250;
+}
+
+.textall {
+    color: deeppink;
+    background-color: darkgray;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.playwrite-de-va-guides-regular {
+    font-family: "Playwrite DE VA Guides", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
